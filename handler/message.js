@@ -10,6 +10,7 @@ async function handleMessage(Context) {
     // }]);
   } else {
     // console.log(userId);
+    Context.sendText('hellooo')
     const kalimat = message.text.toLowerCase()
     const kata = kalimat.match(/http/g)
     if(kata){
