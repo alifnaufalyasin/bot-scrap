@@ -3,16 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "bottender dev",
+    "dev": "nodemon server.js",
     "lint": "eslint . ",
-    "start": "bottender start",
+    "start": "node server.js",
     "test": "jest"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "bottender": "^1.4.1",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-prettier": "3.1.3",
+    "express": "^4.17.1",
     "jest": "25.4.0",
     "prettier": "2.0.4"
-  }
+  },
+  "description": "This project was bootstrapped with [Bottender](https://github.com/Yoctol/bottender) init script.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alifnaufalyasin/bot-scrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alifnaufalyasin/bot-scrap/issues"
+  },
+  "homepage": "https://github.com/alifnaufalyasin/bot-scrap#readme"
 }
