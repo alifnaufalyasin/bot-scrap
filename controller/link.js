@@ -2,7 +2,7 @@ const { listLink } = require("../model/modelListLink")
 
 async function add(context) {
   const id = await listLink.countDocuments({})
-  let profileUser = await Context.getUserProfile()
+  let profileUser = await context.getUserProfile()
   const myobj = { 
     id_link: id+1, 
     text: context.event.message.text, 
