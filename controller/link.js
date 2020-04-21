@@ -1,6 +1,6 @@
 const { listLink } = require("../model/modelListLink")
 
-function add(context) {
+async function add(context) {
   const id = await listLink.countDocuments({})
   let profileUser = await Context.getUserProfile()
   const myobj = { 
