@@ -9,8 +9,7 @@ async function handleMessage(Context) {
     //   text: "Kakak ngirim apa? aku gabisa liat :( "
     // }]);
   } else {
-    // console.log(userId);
-    Context.sendText('hellooo')
+    console.log(userId);
     const kalimat = message.text.toLowerCase()
     const kata = kalimat.match(/http/g)
     if(kata){
