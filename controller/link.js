@@ -12,7 +12,7 @@ async function add(context) {
   };
   const data = new listLink(myobj)
   data.save()
-  context.sendText('Tersimpan')
+  context.sendText('Raisa bantu simpan ya link nya :)')
 }
 
 module.exports = {

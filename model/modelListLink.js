@@ -10,7 +10,7 @@ const listLink = new Schema({
   waktu: {type: String, required: true},
 }, { collection: 'grup_ai' })
 
-const listLink = mongoose.model('listLink',userSchema)
+const listLink = await mongoose.model('listLink',userSchema)
 
 module.exports = {
   listLink
