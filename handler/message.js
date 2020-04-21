@@ -1,3 +1,5 @@
+const { add } = require("../controller/link");
+
 async function handleMessage(Context) {
   const message = Context.event.message;
   let profileUser = await Context.getUserProfile()
@@ -13,10 +15,12 @@ async function handleMessage(Context) {
     const kalimat = message.text.toLowerCase()
     const kata = kalimat.match(/http/g)
     if(kata){
-      Context.sendText('Ada')
+      add(Context)
     }
   }
 }
+
+
 
 module.exports = {
   handleMessage
