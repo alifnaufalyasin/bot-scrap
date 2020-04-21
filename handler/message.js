@@ -13,7 +13,7 @@ async function handleMessage(Context) {
     const kalimat = message.text.toLowerCase()
     const kata = kalimat.match(/http/g)
     if(kata){
-      Context.sendText('Ada')
+      Context.reply('Ada')
     }
   }
 }
