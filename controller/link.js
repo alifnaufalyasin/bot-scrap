@@ -7,6 +7,8 @@ async function add(context) {
   const dd = String(date.getDate()).padStart(2, "0")
   const mm = String(date.getMonth()).padStart(2, "0")
   const yyyy = date.getFullYear()
+  console.log(context.event.message.text.split('\n'));
+  
   const myobj = { 
     id_link: id+1, 
     text: context.event.message.text, 
