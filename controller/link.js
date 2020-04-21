@@ -1,4 +1,4 @@
-const { listLink } = require("../model/modelListLink")
+const { listLink, listLinkTeks} = require("../model/modelListLink")
 
 async function add(context) {
   const id = await listLink.countDocuments({})
@@ -15,7 +15,17 @@ async function add(context) {
     user_id: profileUser.userId,
     waktu: yyyy+'-'+dd+'-'+mm, 
   };
+  const myobjText = { 
+    id_link: id+1, 
+    text: context.event.message.text, 
+    pengirim: profileUser.displayName,
+    user_id: profileUser.userId,
+    waktu: yyyy+'-'+dd+'-'+mm, 
+  };
+
+  const dataText = new listLinkTeks(myobjText)
   const data = new listLink(myobj)
+  dataText.save()
   data.save()
   context.sendText('Raisa bantu simpan ya link nya :)')
 }
