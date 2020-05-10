@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "nodemon server.js",
-    "lint": "eslint . ",
     "start": "node server.js",
     "test": "jest"
   },
