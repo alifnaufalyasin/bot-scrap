@@ -16,8 +16,6 @@ async function handleMessage(Context) {
     const kata = kalimat.match(/http/g)
     if(kata){
       add(Context)
-    }else{
-      Context.sendText('Apa tuh kak')
     }
   }
 }
